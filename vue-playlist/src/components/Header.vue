@@ -8,13 +8,19 @@
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <router-link to="/home"><a class="nav-link" >Home <span class="sr-only">(current)</span></a></router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+           <router-link to="/IntroductionToAthletes"><a class="nav-link" >IntroductionToAthletes <span class="sr-only">(current)</span></a></router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <router-link to="/MedalRankings"><a class="nav-link" >MedalRankings <span class="sr-only">(current)</span></a></router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/News"><a class="nav-link" >News <span class="sr-only">(current)</span></a></router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/PhotoPage"><a class="nav-link" >PhotoPage <span class="sr-only">(current)</span></a></router-link>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>

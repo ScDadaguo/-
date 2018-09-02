@@ -3,22 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
-// import HelloWorld from './components/HelloWorld'
-
+import  {routes}  from './routes.js'
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
-// const router =new VueRouter({
-//   routes:[
-//     {path:"/",component:Home},
-//     {path:"/helloworld",component:HelloWorld},
-//   ],
-
-// })
+const router = new VueRouter({
+  routes,
+  mode:"history",
+})
 
 /* eslint-disable no-new */
 new Vue({
-  // router,
+  router,
   el: '#app',
   components: { App },
   template: '<App/>'
